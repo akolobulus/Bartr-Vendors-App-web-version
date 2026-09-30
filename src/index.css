@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bartr-blue: #0067F5;
+    --color-bartr-blue-dark: #0A2E65;
+    --color-bartr-blue-tint: #E1F6FF;
+    --color-bartr-green-tint: #ECFBEC;
+    --color-bartr-red-tint: #FFF0F4;
+    --color-bartr-yellow-tint: #FFFFEE;
+    --color-bartr-backdrop: #F5F6FA;
+    --color-bartr-map-bg: #F4F4ED;
+    --color-bartr-danger: #E5484D;
+    --color-bartr-success: #2F9E63;
+    --color-bartr-star: #F5B301;
+    --color-bartr-ink: #0A2E65;
+    --color-bartr-ink-soft: #5B6472;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--color-bartr-ink);
+    background-color: #F5F6FA;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom scrollbar hiding for horizontal chip rows */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
